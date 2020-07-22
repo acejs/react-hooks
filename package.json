@@ -1,18 +1,19 @@
 {
   "name": "@cdrh/hooks",
   "version": "0.0.1",
-  "description": "react component webpack config",
+  "description": "Customize react hook",
   "main": "dist/bundle.umd.js",
   "module": "dist/bundle.esm.js",
+  "types": "./types/index.d.ts",
   "scripts": {
     "dev": "webpack-dev-server --mode=development --config ./scripts/build/webpack.config.js",
-    "build": "tsc -p ./scripts/tsconfig/tsconfig.prod.json --declarationDir types --declaration true --emitDeclarationOnly true && rollup --config rollup.config.js",
+    "build": "yarn types && rollup --config rollup.config.js",
+    "types": "tsc -p ./scripts/tsconfig/tsconfig.prod.json --declarationDir types --declaration true --emitDeclarationOnly true",
     "test": "jest"
   },
-  "repository": "https://registry.code.tuya-inc.top/backendComponents/reactc-webpack-config.git",
+  "repository": "https://github.com/BlueBlueBlueSky/react-hooks.git",
   "author": "<15380598700@163.com>",
   "license": "MIT",
-  "types": "./types/index.d.ts",
   "devDependencies": {
     "@rollup/plugin-typescript": "^5.0.2",
     "@types/jest": "^25.2.1",

@@ -1,4 +1,5 @@
 build
+src
 example
 node_modules
 public
@@ -15,3 +16,4 @@ publish.sh
 *.config.js
 tsconfig.json
 yarn.lock
+yarn-error.log
