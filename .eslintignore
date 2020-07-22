@@ -2,3 +2,4 @@ scripts
 dist
 types
 postcss.config.js
+rollup.config.js

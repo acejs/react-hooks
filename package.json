@@ -1,12 +1,12 @@
 {
-  "name": "rc-webpack-config",
-  "version": "1.0.0",
+  "name": "@cdrh/hooks",
+  "version": "0.0.1",
   "description": "react component webpack config",
-  "main": "./dist/index.js",
-  "module": "./src",
+  "main": "dist/bundle.umd.js",
+  "module": "dist/bundle.esm.js",
   "scripts": {
     "dev": "webpack-dev-server --mode=development --config ./scripts/build/webpack.config.js",
-    "build": "tsc -p ./scripts/tsconfig/tsconfig.prod.json && webpack --profile --mode=production --config ./scripts/build/webpack.config.js",
+    "build": "tsc -p ./scripts/tsconfig/tsconfig.prod.json --declarationDir types --declaration true --emitDeclarationOnly true && rollup --config rollup.config.js",
     "test": "jest"
   },
   "repository": "https://registry.code.tuya-inc.top/backendComponents/reactc-webpack-config.git",
@@ -14,6 +14,7 @@
   "license": "MIT",
   "types": "./types/index.d.ts",
   "devDependencies": {
+    "@rollup/plugin-typescript": "^5.0.2",
     "@types/jest": "^25.2.1",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
@@ -38,6 +39,8 @@
     "prettier": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "rollup": "^2.22.2",
+    "rollup-plugin-terser": "^6.1.0",
     "style-loader": "^1.1.3",
     "terser-webpack-plugin": "^3.0.7",
     "ts-jest": "^25.3.1",
