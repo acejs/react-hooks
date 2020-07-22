@@ -7,9 +7,9 @@
 ### Installing
 
 ```shell
-npm install @cdrh/hooks
+npm install @cd-react/hooks
 // or
-yarn add @cdrh/hooks
+yarn add @cd-react/hooks
 ```
 
 
@@ -17,14 +17,10 @@ yarn add @cdrh/hooks
 ### Usage
 
 ```javascript
-import { useRefState } from '@cdrh/hooks'
+import { useRefState } from '@cd-react/hooks'
 ```
 
-
-
-
-
-#### useRefState
+#### useRefState hooks
 
 ```javascript
 // refValue.current is up-to-date value

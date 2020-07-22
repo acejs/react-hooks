@@ -1,5 +1,5 @@
 {
-  "name": "@cdrh/hooks",
+  "name": "@cd-react/hooks",
   "version": "0.0.1",
   "description": "Customize react hook",
   "main": "dist/bundle.umd.js",
