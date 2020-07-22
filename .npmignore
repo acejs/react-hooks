@@ -1,0 +1,17 @@
+build
+example
+node_modules
+public
+coverage
+scripts
+publish.sh
+
+.prettierrc
+.eslintrc.json
+.eslintignore
+.gitignore
+.npmignore
+
+*.config.js
+tsconfig.json
+yarn.lock
